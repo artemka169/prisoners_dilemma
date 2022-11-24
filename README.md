@@ -1,7 +1,7 @@
 <p align="center">
-  <h1 align="center">Prisoners dilemma tournament</h1>
+  <h2 align="center">Prisoners dilemma tournament</h2>
 
-  <h2 align="center">
+  <h3 align="center">
  Artem Moskovets, SMD-2
     <br />
     <a href="https://github.com/artemka169/prisoners_dilemma/issues">Report Bug</a>
