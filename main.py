@@ -4,7 +4,7 @@
 # h1 for each bot - list of own move
 
 def play(counter=100):
-    players = {defector: 0, cooperator: 0, tft: 0, tft_99: 0, tft_rand20: 0, tft_rand_power_2: 0, tft_2: 0, tft_2_evol: 0, tft_98: 0, tft_99_d: 0} #, lets_go_random: 0}
+    players = {defector: 0, cooperator: 0, tft: 0, tft_99: 0, tft_rand20: 0, tft_rand_power_2: 0, tft_2: 0, tft_2_evol: 0, tft_98: 0, tft_99_d: 0, lets_go_random: 0}
     pairs = [(a, b) for idx, a in enumerate(list(players.keys())) for b in list(players.keys())[idx + 1:]]
     with open("results.txt", "w") as f:
         for pair in pairs:
@@ -178,8 +178,8 @@ def tft_99_d(h1: list, h2: list, counter=100):
 
 if __name__ == "__main__":
     results_list = []
-    for i in range(100):
-        results_list.append(play(1000))
+    for i in range(50):
+        results_list.append(play(500))
     for i in range(len(results_list)):
         print(results_list[i-1])
         print()
